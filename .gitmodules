@@ -1,0 +1,3 @@
+[submodule "c1games_terminal"]
+	path = c1games_terminal
+	url = git@github-personal:williserdman/c1games_terminal.git
