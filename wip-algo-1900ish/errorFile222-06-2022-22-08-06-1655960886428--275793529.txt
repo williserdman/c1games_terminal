@@ -1,0 +1,53 @@
+Random seed: 3678124708785874358
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Performing turn 0 of your custom algo strategy
+Got scored on at: [3, 10]
+All locations: [[3, 10]]
+Got scored on at: [3, 10]
+All locations: [[3, 10], [3, 10]]
+Got scored on at: [3, 10]
+All locations: [[3, 10], [3, 10], [3, 10]]
+Got scored on at: [14, 0]
+All locations: [[3, 10], [3, 10], [3, 10], [14, 0]]
+Performing turn 1 of your custom algo strategy
+Performing turn 2 of your custom algo strategy
+Performing turn 3 of your custom algo strategy
+Performing turn 4 of your custom algo strategy
+Performing turn 5 of your custom algo strategy
+Performing turn 6 of your custom algo strategy
+Performing turn 7 of your custom algo strategy
+Performing turn 8 of your custom algo strategy
+Performing turn 9 of your custom algo strategy
+Performing turn 10 of your custom algo strategy
+Performing turn 11 of your custom algo strategy
+Performing turn 12 of your custom algo strategy
+Performing turn 13 of your custom algo strategy
+Performing turn 14 of your custom algo strategy
+Performing turn 15 of your custom algo strategy
+Performing turn 16 of your custom algo strategy
+Performing turn 17 of your custom algo strategy
+Performing turn 18 of your custom algo strategy
+Performing turn 19 of your custom algo strategy
+Performing turn 20 of your custom algo strategy
+Performing turn 21 of your custom algo strategy
+Traceback (most recent call last):
+  File "/Users/williserdman/Documents/code/python_playground/C1GamesStarterKit/wip-algo-1900ish/algo_strategy.py", line 244, in <module>
+    algo.start()
+  File "/Users/williserdman/Documents/code/python_playground/C1GamesStarterKit/wip-algo-1900ish/gamelib/algocore.py", line 74, in start
+    self.on_turn(game_state_string)
+  File "/Users/williserdman/Documents/code/python_playground/C1GamesStarterKit/wip-algo-1900ish/algo_strategy.py", line 66, in on_turn
+    self.starter_strategy(game_state)
+  File "/Users/williserdman/Documents/code/python_playground/C1GamesStarterKit/wip-algo-1900ish/algo_strategy.py", line 84, in starter_strategy
+    self.build_defences(game_state)
+  File "/Users/williserdman/Documents/code/python_playground/C1GamesStarterKit/wip-algo-1900ish/algo_strategy.py", line 163, in build_defences
+    game_state.attempt_spawn(TURRET, turret_locations)
+  File "/Users/williserdman/Documents/code/python_playground/C1GamesStarterKit/wip-algo-1900ish/gamelib/game_state.py", line 379, in attempt_spawn
+    if self.can_spawn(unit_type, location, 1):
+  File "/Users/williserdman/Documents/code/python_playground/C1GamesStarterKit/wip-algo-1900ish/gamelib/game_state.py", line 332, in can_spawn
+    affordable = self.number_affordable(unit_type) >= num
+  File "/Users/williserdman/Documents/code/python_playground/C1GamesStarterKit/wip-algo-1900ish/gamelib/game_state.py", line 242, in number_affordable
+    player_held = self.get_resources()
+  File "/Users/williserdman/Documents/code/python_playground/C1GamesStarterKit/wip-algo-1900ish/gamelib/game_state.py", line 218, in get_resources
+    if not player_index == 1 and not player_index == 0:
+KeyboardInterrupt

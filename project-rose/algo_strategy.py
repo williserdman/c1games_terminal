@@ -1,4 +1,3 @@
-from tkinter.messagebox import NO
 from wsgiref.simple_server import demo_app
 import gamelib
 import random
@@ -295,13 +294,14 @@ class AlgoStrategy(gamelib.AlgoCore):
         # Instead they will stay at the perfect distance to attack the front two rows of the enemy base.
 
         # todo: check that we can afford this attack before we actually do it
+        # todo: the wall that's currently in place. when we're not using it, it's actually helping the enemy as it changes the location of our funnel. so get rid of it when not in use
         if (
             game_state.get_resource(MP)
             > gamelib.GameUnit(DEMOLISHER, game_state.config).cost[game_state.MP] * 3
-            and game_state.get_resource(SP) > 22
+            and game_state.get_resource(SP) > 18
         ):
 
-            for x in range(27, 4, -1):
+            for x in range(21, 4, -1):
                 game_state.attempt_spawn(cheapest_unit, [x, y_val])
                 # game_state.attempt_remove([x, y_val])
 

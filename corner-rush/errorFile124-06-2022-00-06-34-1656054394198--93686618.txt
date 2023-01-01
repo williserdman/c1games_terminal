@@ -1,0 +1,26 @@
+Random seed: 6887890473270194125
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Performing turn 0 of your custom algo strategy
+Performing turn 1 of your custom algo strategy
+Performing turn 2 of your custom algo strategy
+Performing turn 3 of your custom algo strategy
+Performing turn 4 of your custom algo strategy
+Performing turn 5 of your custom algo strategy
+Performing turn 6 of your custom algo strategy
+Performing turn 7 of your custom algo strategy
+Performing turn 8 of your custom algo strategy
+Performing turn 9 of your custom algo strategy
+Performing turn 10 of your custom algo strategy
+Performing turn 11 of your custom algo strategy
+Performing turn 12 of your custom algo strategy
+Traceback (most recent call last):
+  File "/Users/williserdman/Documents/code/python_playground/C1GamesStarterKit/hs-comp-v0-2-5/algo_strategy.py", line 492, in <module>
+    algo.start()
+  File "/Users/williserdman/Documents/code/python_playground/C1GamesStarterKit/hs-comp-v0-2-5/gamelib/algocore.py", line 79, in start
+    self.on_action_frame(game_state_string)
+  File "/Users/williserdman/Documents/code/python_playground/C1GamesStarterKit/hs-comp-v0-2-5/algo_strategy.py", line 473, in on_action_frame
+    with open("outgamestate.txt", "w") as f:
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/_bootlocale.py", line 33, in getpreferredencoding
+    def getpreferredencoding(do_setlocale=True):
+KeyboardInterrupt

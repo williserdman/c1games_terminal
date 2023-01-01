@@ -1,0 +1,23 @@
+Random seed: 8439502037768013462
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Performing turn 0 of your custom algo strategy
+Performing turn 1 of your custom algo strategy
+Traceback (most recent call last):
+  File "/Users/williserdman/Documents/code/python_playground/C1GamesStarterKit/project-rose-v2/algo_strategy.py", line 304, in <module>
+    algo.start()
+  File "/Users/williserdman/Documents/code/python_playground/C1GamesStarterKit/project-rose-v2/gamelib/algocore.py", line 74, in start
+    self.on_turn(game_state_string)
+  File "/Users/williserdman/Documents/code/python_playground/C1GamesStarterKit/project-rose-v2/algo_strategy.py", line 67, in on_turn
+    self.strategy(game_state)
+  File "/Users/williserdman/Documents/code/python_playground/C1GamesStarterKit/project-rose-v2/algo_strategy.py", line 160, in strategy
+    best_location = self.least_damage_spawn_location(
+  File "/Users/williserdman/Documents/code/python_playground/C1GamesStarterKit/project-rose-v2/algo_strategy.py", line 243, in least_damage_spawn_location
+    path = game_state.find_path_to_edge(location)
+  File "/Users/williserdman/Documents/code/python_playground/C1GamesStarterKit/project-rose-v2/gamelib/game_state.py", line 499, in find_path_to_edge
+    return self._shortest_path_finder.navigate_multiple_endpoints(start_location, end_points, self)
+  File "/Users/williserdman/Documents/code/python_playground/C1GamesStarterKit/project-rose-v2/gamelib/navigation.py", line 74, in navigate_multiple_endpoints
+    for location in self.game_state.game_map:
+  File "/Users/williserdman/Documents/code/python_playground/C1GamesStarterKit/project-rose-v2/gamelib/game_map.py", line 63, in __next__
+    if new_location[0] == self.ARENA_SIZE:
+KeyboardInterrupt

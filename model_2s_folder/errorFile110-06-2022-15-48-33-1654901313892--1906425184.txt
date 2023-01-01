@@ -1,0 +1,10 @@
+Random seed: 211934845525257365
+---------------- Starting Your Algo --------------------
+Traceback (most recent call last):
+  File "/Users/williserdman/Documents/code/python_playground/C1GamesStarterKit/original-starter/algo_strategy.py", line 238, in <module>
+    algo.start()
+  File "/Users/williserdman/Documents/code/python_playground/C1GamesStarterKit/original-starter/gamelib/algocore.py", line 59, in start
+    game_state_string = get_command()
+  File "/Users/williserdman/Documents/code/python_playground/C1GamesStarterKit/original-starter/gamelib/util.py", line 12, in get_command
+    ret = sys.stdin.readline()
+KeyboardInterrupt
